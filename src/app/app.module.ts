@@ -12,6 +12,8 @@ import { HomeComponent } from './component/home/home.component';
 import { PdfUploadComponent } from './component/pdf-upload/pdf-upload.component';
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
+import { UploadComponent } from './component/upload/upload.component';
+import { ProgressComponent } from './component/progress/progress.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HeaderComponent } from './component/header/header.component';
     HomeComponent,
     PdfUploadComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    UploadComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
