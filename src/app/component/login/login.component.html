@@ -1,0 +1,113 @@
+<div class="FillBack">
+    <div class="login-form">
+      <form #loginform="ngForm" (ngSubmit)="onSubmit(loginform.value)" novalidate>
+        <h2>Sign in</h2>
+        <hr />
+  
+        <!-- *********************************** Email ************************************** -->
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            placeholder="Email"
+            required
+            email
+            #email="ngModel"
+            type="email"
+            class="form-control"
+            name="email"
+            (ngModel)="(email)"
+            autocomplete="off"
+          />
+  
+          <!-- Validation of Email is Shown Here -->
+          <div *ngIf="(email.invalid || loginform.submitted) && email.touched">
+            <div
+              class="alert alert-danger text-danger text-center py-1 mx-3 mt-1"
+              role="alert"
+              *ngIf="email.errors.required"
+            >
+              Email is required
+            </div>
+            <div
+              class="alert alert-danger text-danger text-center py-1 mx-3 mt-1"
+              role="alert"
+              *ngIf="email.errors.email"
+            >
+              Email must be a valid email address
+            </div>
+          </div>
+        </div>
+  
+        <!-- *********************************** Password ************************************** -->
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            required
+            #password="ngModel"
+            placeholder="Password"
+            class="form-control"
+            name="password"
+            (ngModel)="(password)"
+            minlength="6"
+          />
+  
+          <!-- Validation of Password is Shown Here -->
+          <div
+            *ngIf="(password.invalid || loginform.submitted) && password.touched"
+          >
+            <div
+              class="alert alert-danger text-danger text-center py-1 mx-3 mt-1"
+              role="alert"
+              *ngIf="password.errors.required"
+            >
+              Password is required
+            </div>
+            <div
+              class="alert alert-danger text-danger text-center py-1 mx-3 mt-1"
+              role="alert"
+              *ngIf="password.errors.minlength"
+            >
+              Password must be at least 6 characters
+            </div>
+          </div>
+        </div>
+  
+        <div class="d-flex justify-content-around">
+          <div>
+            <!-- Remember me -->
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="defaultLoginFormRemember"
+              />
+              <label class="custom-control-label" for="defaultLoginFormRemember"
+                >Remember me</label
+              >
+            </div>
+          </div>
+          <div>
+            <!-- Forgot password -->
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!--Login Button-->
+        <div class="text-center">
+          <button
+            class="btn btn-primary my-4"
+            type="submit"
+            routerLink="/dashboard"
+            [disabled]="!loginform.valid"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+      <div class="text-center small">
+        Don't have an account? <a routerLink="/signup">Sign up</a>
+      </div>
+    </div>
+  </div>
+  
