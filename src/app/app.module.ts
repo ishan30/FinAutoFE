@@ -11,13 +11,15 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { HomeComponent } from './component/home/home.component';
 import { PdfUploadComponent } from './component/pdf-upload/pdf-upload.component';
 import { LoginComponent } from './component/login/login.component';
+import { HeaderComponent } from './component/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PdfUploadComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
