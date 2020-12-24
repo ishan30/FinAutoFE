@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { HomeComponent } from './component/home/home.component';
+import { PdfUploadComponent } from './component/pdf-upload/pdf-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PdfUploadComponent
   ],
   imports: [
     BrowserModule,
