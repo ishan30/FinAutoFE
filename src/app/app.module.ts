@@ -15,6 +15,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { UploadComponent } from './component/upload/upload.component';
 import { ProgressComponent } from './component/progress/progress.component';
 import { EditDataComponent } from './component/edit-data/edit-data.component';
+import { InvoiceDetailComponent } from './component/edit/invoice-detail/invoice-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EditDataComponent } from './component/edit-data/edit-data.component';
     HeaderComponent,
     UploadComponent,
     ProgressComponent,
-    EditDataComponent
+    EditDataComponent,
+    InvoiceDetailComponent
   ],
   imports: [
     BrowserModule,

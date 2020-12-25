@@ -1,0 +1,131 @@
+<!-- <p>invoice-detail works!</p> -->
+<form>
+    <div class="form-group row">
+        <label for="GSTIN" class="col-sm-2 col-form-label">GSTIN</label>
+        <div class="form-group col-md-4">
+            <select id="GSTIN" class="form-control">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+          </div>
+      <label for="clientName" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-4">
+        <input type="text" readonly class="form-control-plaintext" id="clientName" value="Orange 38 Solutions">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="invocieNo" class="col-sm-2 col-form-label">Invocie No</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="invocieNo" placeholder="Invocie No">
+      </div>
+      <label for="invoiceType" class="col-sm-2 col-form-label">Invoice Type</label>
+      <div class="form-group col-md-4">
+        <select id="invoiceType" class="form-control">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="invocieDate" class="col-sm-2 col-form-label">Invocie Date</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="invocieDate" placeholder="Invocie Date">
+        </div>
+        <label for="invoiceType" class="col-sm-2 col-form-label">Goods/Service</label>
+        <div class="form-group col-md-4">
+          <select id="invoiceType" class="form-control">
+              <option selected>Choose...</option>
+              <option value="1">Goods</option>
+              <option value="2">Service</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="vendorGSTIN" class="col-sm-2 col-form-label">Vendor GSTIN</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="vendorGSTIN" placeholder="Vendor GSTIN">
+        </div>
+        <label for="invoiceType" class="col-sm-2 col-form-label">Status</label>
+        <div class="form-group col-md-4">
+          <select id="invoiceType" class="form-control">
+              <option selected>Choose...</option>
+              <option value="1">Active</option>
+              <option value="2">Inactive</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="vendorNameRecord" class="col-sm-2 col-form-label">Vendor Name</label>
+        <div class="col-sm-6">
+          <input type="text" readonly class="form-control" id="vendorNameRecord" placeholder="Vendor Name as per the Records">
+        </div>
+        <label for="placeOfSupply" class="col-sm-1 col-form-label">POS</label>
+        <div class="form-group col-sm-3">
+          <select id="placeOfSupply" class="form-control">
+              <option selected>Choose...</option>
+              <option value="1">01</option>
+              <option value="2">02</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="vendorNameBooks" class="col-sm-2 col-form-label">Vendor Name</label>
+        <div class="col-sm-10">
+          <input type="text"  class="form-control" id="vendorNameBooks" placeholder="Vendor Name as per the Books">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="taxableVal" class="col-sm-2 col-form-label">Taxable value</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="taxableVal" placeholder="Taxable Value">
+        </div>
+        <label for="totalVal" class="col-sm-2 col-form-label">Total value</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="totalVal" placeholder="Total Value">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="cgstVal" class="col-sm-2 col-form-label">CGST</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="cgstVal" placeholder="CGST Amount">
+        </div>
+        <label for="sgstVal" class="col-sm-2 col-form-label">SGST</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="sgstVal" placeholder="SGST Amount">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="igstVal" class="col-sm-2 col-form-label">IGST</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="igstVal" placeholder="IGST Amount">
+        </div>
+        <label for="cessVal" class="col-sm-2 col-form-label">Cess</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="cessVal" placeholder="Cess Amount">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="tcsVal" class="col-sm-2 col-form-label">TCS</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="tcsVal" placeholder="TCS Amount">
+        </div>
+        <label for="roundOffVal" class="col-sm-2 col-form-label">Round Off</label>
+        <div class="col-sm-4">
+          <input type="number"  class="form-control" id="roundOffVal" placeholder="Round Off">
+        </div>
+      </div>
+  </form>
