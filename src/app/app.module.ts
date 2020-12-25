@@ -14,6 +14,7 @@ import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 import { UploadComponent } from './component/upload/upload.component';
 import { ProgressComponent } from './component/progress/progress.component';
+import { EditDataComponent } from './component/edit-data/edit-data.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProgressComponent } from './component/progress/progress.component';
     LoginComponent,
     HeaderComponent,
     UploadComponent,
-    ProgressComponent
+    ProgressComponent,
+    EditDataComponent
   ],
   imports: [
     BrowserModule,
