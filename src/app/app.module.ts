@@ -16,6 +16,7 @@ import { UploadComponent } from './component/upload/upload.component';
 import { ProgressComponent } from './component/progress/progress.component';
 import { EditDataComponent } from './component/edit-data/edit-data.component';
 import { InvoiceDetailComponent } from './component/edit/invoice-detail/invoice-detail.component';
+import { UserDetailComponent } from './component/edit/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { InvoiceDetailComponent } from './component/edit/invoice-detail/invoice-
     UploadComponent,
     ProgressComponent,
     EditDataComponent,
-    InvoiceDetailComponent
+    InvoiceDetailComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
