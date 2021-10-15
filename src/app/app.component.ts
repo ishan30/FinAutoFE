@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'finAuto';
+  title = 'Grovi';
   // pdfSrc: string = '/pdf-test.pdf';
   // upload(event) {
   //   this.file = event.target.files[0];
