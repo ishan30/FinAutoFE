@@ -9,27 +9,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { HomeComponent } from './component/home/home.component';
-import { PdfUploadComponent } from './component/pdf-upload/pdf-upload.component';
 import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/header/header.component';
 import { UploadComponent } from './component/upload/upload.component';
 import { ProgressComponent } from './component/progress/progress.component';
-import { EditDataComponent } from './component/edit-data/edit-data.component';
-import { InvoiceDetailComponent } from './component/edit/invoice-detail/invoice-detail.component';
-import { UserDetailComponent } from './component/edit/user-detail/user-detail.component';
+import { DashboardComponent } from './component/shared/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PdfUploadComponent,
     LoginComponent,
     HeaderComponent,
     UploadComponent,
     ProgressComponent,
-    EditDataComponent,
-    InvoiceDetailComponent,
-    UserDetailComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
